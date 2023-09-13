@@ -1,0 +1,1340 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Titillium+Web:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Roboto:wght@100;300;400;500;700&family=Titillium+Web:wght@300;400;700&display=swap');
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: Capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 90%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth; 
+}
+
+/* for styling side scroll bar */
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5rem;
+}
+
+body {
+  background: black;
+  overflow-x: hidden;
+}
+
+
+/* =============================== */
+
+/* .heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+} */
+
+/* .heading span {
+  color: #ffc107;
+  text-transform: uppercase;
+} */
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.header {
+  background: #010103;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 7%;
+  border-bottom: 0.2rem solid #00f7ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header .logo {
+  font-size: 3rem;
+  color:#00f7ff;
+  font-family: 'Dancing Script', cursive;
+  /* color: white; */
+  font-weight: 600;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.header .navbar a:hover {
+  color: #00f7ff;
+  border-bottom: 0.3rem solid #00f7ff;
+  padding-bottom: 0.5rem;
+}
+
+.header .icons {
+  display: flex;
+}
+.header .icons div {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+.header .icons div:hover {
+  color: #07d6ff;
+}
+
+#menu-btn {
+  display: none;
+}
+
+/* ==================================== */
+/* home */
+.home { 
+  background: linear-gradient(90deg, rgb(0 0 0 / 90%), rgb(68 68 68 / 35%)), url('../src/assets/banner_img.jpg'); /* Replace with the path to your image */
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  /* Other styles for the .home element */
+  height: 100vh; /* Adjust as needed */
+}
+
+.home .content {
+  display: flex;
+  padding: 10rem;
+  padding-top: 25rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home .content h2 {
+  text-align: center;
+  font-size: 6rem;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  max-width: 60rem;
+  left: 15;
+}
+.home .content p {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: lighter;
+  line-height: 1.4;
+  padding: 1rem 0;
+  color: #eee;
+}
+
+.home .content p span {
+  color: #00f7ff;
+  font-weight: 600;
+}
+
+/* =========================================== */
+/* A */
+.container-a {
+  border-top: 3rem solid black;
+  background-image: url('../src/assets/Mustang\ GT.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container-a .content-box {
+  background: rgba(255, 255, 255, 0.576);
+  padding: 1rem 5rem;
+  height: 10rem;
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-a .content-box h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-a .content-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Show the specifications when .show-specifications is applied to .content-box */
+.container-a .content-box .specifications {
+  display: none;
+  margin-top: 20px;
+}
+
+.container-a .content-box.show-specifications .specifications {
+  display: block; 
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.576);
+  margin-top: 5rem;
+  /* /* max-width: 80rem;  */
+  width: 800px;
+  text-align: center;
+  padding: 1rem 5rem;
+
+  /* Show the specifications when .show-specifications class is applied */
+}
+
+.container-a .content-box.show-specifications button {
+  margin-left: 22.5rem;
+  background-color: rgb(255, 0, 0); /* Change button color when specifications are shown */
+}
+
+.container-a .content-box.show-specifications button:hover {
+  background-color: #000000; /* Change button color on hover when specifications are shown */
+}
+
+.container-a .content-box.show-specifications button:active {
+  background-color: #7a9900; /* Change button color on click when specifications are shown */
+}
+
+.container-a .content-box .specifications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.container-a .content-box .specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-a .content-box .specifications li {
+  margin-bottom: 10px;
+}
+
+
+
+
+/* ================================================== */
+/* C */
+
+.container-c {
+  border-top: 3rem solid black;
+  background-image: url('../src/assets/ferrari-458.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container-c .content-box {
+  background: rgba(255, 255, 255, 0.576);
+  padding: 1rem 5rem;
+  height: 10rem;
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-c .content-box h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-c .content-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Show the specifications when .show-specifications is applied to .content-box */
+.container-c .content-box .specifications {
+  display: none;
+  margin-top: 20px;
+}
+
+.container-c .content-box.show-specifications .specifications {
+  display: block; 
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.576);
+  margin-top: 5rem;
+  /* /* max-width: 80rem;  */
+  width: 800px;
+  text-align: center;
+  padding: 1rem 5rem;
+
+  /* Show the specifications when .show-specifications class is applied */
+}
+
+.container-c .content-box.show-specifications button {
+  margin-left: 22.5rem;
+  background-color: rgb(255, 0, 0); /* Change button color when specifications are shown */
+}
+
+.container-c .content-box.show-specifications button:hover {
+  background-color: #000000; /* Change button color on hover when specifications are shown */
+}
+
+.container-c .content-box.show-specifications button:active {
+  background-color: #7a9900; /* Change button color on click when specifications are shown */
+}
+
+.container-c .content-box .specifications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.container-c .content-box .specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-c .content-box .specifications li {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* =============================================================== */
+/* D */
+
+.container-d {
+  border-top: 3rem solid black;
+  background-image: url('../src/assets/Murcielago.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container-d .content-box {
+  background: rgba(255, 255, 255, 0.576);
+  padding: 1rem 5rem;
+  height: 10rem;
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-d .content-box h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-d .content-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Show the specifications when .show-specifications is applied to .content-box */
+.container-d .content-box .specifications {
+  display: none;
+  margin-top: 20px;
+}
+
+.container-d .content-box.show-specifications .specifications {
+  display: block; 
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.576);
+  margin-top: 5rem;
+  /* /* max-width: 80rem;  */
+  width: 800px;
+  text-align: center;
+  padding: 1rem 5rem;
+
+  /* Show the specifications when .show-specifications class is applied */
+}
+
+.container-d .content-box.show-specifications button {
+  margin-left: 22.5rem;
+  background-color: rgb(255, 0, 0); /* Change button color when specifications are shown */
+}
+
+.container-d .content-box.show-specifications button:hover {
+  background-color: #000000; /* Change button color on hover when specifications are shown */
+}
+
+.container-d .content-box.show-specifications button:active {
+  background-color: #7a9900; /* Change button color on click when specifications are shown */
+}
+
+.container-d .content-box .specifications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.container-d .content-box .specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-d .content-box .specifications li {
+  margin-bottom: 10px;
+}
+
+
+
+/* ============================================================================ */
+/* E */
+.container-e {
+  border-top: 3rem solid black;
+  background-image: url('../src/assets/porsche_CGT.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container-e .content-box {
+  background: rgba(255, 255, 255, 0.576);
+  padding: 1rem 5rem;
+  height: 10rem;
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-e .content-box h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-e .content-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Show the specifications when .show-specifications is applied to .content-box */
+.container-e .content-box .specifications {
+  display: none;
+  margin-top: 20px;
+}
+
+.container-e .content-box.show-specifications .specifications {
+  display: block; 
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.576);
+  margin-top: 5rem;
+  /* /* max-width: 80rem;  */
+  width: 800px;
+  text-align: center;
+  padding: 1rem 5rem;
+
+  /* Show the specifications when .show-specifications class is applied */
+}
+
+.container-e .content-box.show-specifications button {
+  margin-left: 22.5rem;
+  background-color: rgb(255, 0, 0); /* Change button color when specifications are shown */
+}
+
+.container-e .content-box.show-specifications button:hover {
+  background-color: #000000; /* Change button color on hover when specifications are shown */
+}
+
+.container-e .content-box.show-specifications button:active {
+  background-color: #7a9900; /* Change button color on click when specifications are shown */
+}
+
+.container-e .content-box .specifications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.container-e .content-box .specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-e .content-box .specifications li {
+  margin-bottom: 10px;
+}
+
+
+/* ============================================================================ */
+/* F */
+.container-f {
+  border-top: 3rem solid black;
+  background-image: url('../src/assets/R34_GTR.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container-f .content-box {
+  background: rgba(255, 255, 255, 0.576);
+  padding: 1rem 5rem;
+  height: 10rem;
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-f .content-box h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-f .content-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Show the specifications when .show-specifications is applied to .content-box */
+.container-f .content-box .specifications {
+  display: none;
+  margin-top: 20px;
+}
+
+.container-f .content-box.show-specifications .specifications {
+  display: block; 
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.576);
+  margin-top: 5rem;
+  /* /* max-width: 80rem;  */
+  width: 800px;
+  text-align: center;
+  padding: 1rem 5rem;
+
+  /* Show the specifications when .show-specifications class is applied */
+}
+
+.container-f .content-box.show-specifications button {
+  margin-left: 22.5rem;
+  background-color: rgb(255, 0, 0); /* Change button color when specifications are shown */
+}
+
+.container-f .content-box.show-specifications button:hover {
+  background-color: #000000; /* Change button color on hover when specifications are shown */
+}
+
+.container-f .content-box.show-specifications button:active {
+  background-color: #7a9900; /* Change button color on click when specifications are shown */
+}
+
+.container-f .content-box .specifications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.container-f .content-box .specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-f .content-box .specifications li {
+  margin-bottom: 10px;
+}
+
+
+/* ================================================================================ */
+/* G */
+.container-g {
+  border-top: 3rem solid black;
+  background-image: url('../src/assets/f40.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container-g .content-box {
+  background: rgba(255, 255, 255, 0.576);
+  padding: 1rem 5rem;
+  height: 10rem;
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-g .content-box h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-g .content-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Show the specifications when .show-specifications is applied to .content-box */
+.container-g .content-box .specifications {
+  display: none;
+  margin-top: 20px;
+}
+
+.container-g .content-box.show-specifications .specifications {
+  display: block; 
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.576);
+  margin-top: 5rem;
+  /* /* max-width: 80rem;  */
+  width: 800px;
+  text-align: center;
+  padding: 1rem 5rem;
+
+  /* Show the specifications when .show-specifications class is applied */
+}
+
+.container-g .content-box.show-specifications button {
+  margin-left: 22.5rem;
+  background-color: rgb(255, 0, 0); /* Change button color when specifications are shown */
+}
+
+.container-g .content-box.show-specifications button:hover {
+  background-color: #000000; /* Change button color on hover when specifications are shown */
+}
+
+.container-g .content-box.show-specifications button:active {
+  background-color: #7a9900; /* Change button color on click when specifications are shown */
+}
+
+.container-g .content-box .specifications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.container-g .content-box .specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-g .content-box .specifications li {
+  margin-bottom: 10px;
+}
+
+
+/* ============================================================================================== */
+/* H */
+.container-h {
+  border-top: 3rem solid black;
+  background-image: url('../src/assets/R8\(1\).jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container-h .content-box {
+  background: rgba(255, 255, 255, 0.576);
+  padding: 1rem 5rem;
+  height: 10rem;
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-h .content-box h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-h .content-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Show the specifications when .show-specifications is applied to .content-box */
+.container-h .content-box .specifications {
+  display: none;
+  margin-top: 20px;
+}
+
+.container-h .content-box.show-specifications .specifications {
+  display: block; 
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.576);
+  margin-top: 5rem;
+  /* /* max-width: 80rem;  */
+  width: 800px;
+  text-align: center;
+  padding: 1rem 5rem;
+
+  /* Show the specifications when .show-specifications class is applied */
+}
+
+.container-h .content-box.show-specifications button {
+  margin-left: 22.5rem;
+  background-color: rgb(255, 0, 0); /* Change button color when specifications are shown */
+}
+
+.container-h .content-box.show-specifications button:hover {
+  background-color: #000000; /* Change button color on hover when specifications are shown */
+}
+
+.container-h .content-box.show-specifications button:active {
+  background-color: #7a9900; /* Change button color on click when specifications are shown */
+}
+
+.container-h .content-box .specifications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.container-h .content-box .specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-h .content-box .specifications li {
+  margin-bottom: 10px;
+}
+
+
+/* =============================================================================== */
+/* I */
+.container-i {
+  border-top: 3rem solid black;
+  background-image: url('../src/assets/Supra.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container-i .content-box {
+  background: rgba(255, 255, 255, 0.576);
+  padding: 1rem 5rem;
+  height: 10rem;
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-i .content-box h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-i .content-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Show the specifications when .show-specifications is applied to .content-box */
+.container-i .content-box .specifications {
+  display: none;
+  margin-top: 20px;
+}
+
+.container-i .content-box.show-specifications .specifications {
+  display: block; 
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.576);
+  margin-top: 5rem;
+  /* /* max-width: 80rem;  */
+  width: 800px;
+  text-align: center;
+  padding: 1rem 5rem;
+
+  /* Show the specifications when .show-specifications class is applied */
+}
+
+.container-i .content-box.show-specifications button {
+  margin-left: 22.5rem;
+  background-color: rgb(255, 0, 0); /* Change button color when specifications are shown */
+}
+
+.container-i .content-box.show-specifications button:hover {
+  background-color: #000000; /* Change button color on hover when specifications are shown */
+}
+
+.container-i .content-box.show-specifications button:active {
+  background-color: #7a9900; /* Change button color on click when specifications are shown */
+}
+
+.container-i .content-box .specifications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.container-i .content-box .specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-i .content-box .specifications li {
+  margin-bottom: 10px;
+}
+
+
+/* ==================================================================================================== */
+/* J */
+.container-j {
+  border-top: 3rem solid black;
+  background-image: url('../src/assets/R35_GTR.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container-j .content-box {
+  background: rgba(255, 255, 255, 0.576);
+  padding: 1rem 5rem;
+  height: 10rem;
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-j .content-box h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-j .content-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Show the specifications when .show-specifications is applied to .content-box */
+.container-j .content-box .specifications {
+  display: none;
+  margin-top: 20px;
+}
+
+.container-j .content-box.show-specifications .specifications {
+  display: block; 
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.576);
+  margin-top: 5rem;
+  /* /* max-width: 80rem;  */
+  width: 800px;
+  text-align: center;
+  padding: 1rem 5rem;
+
+  /* Show the specifications when .show-specifications class is applied */
+}
+
+.container-j .content-box.show-specifications button {
+  margin-left: 22.5rem;
+  background-color: rgb(255, 0, 0); /* Change button color when specifications are shown */
+}
+
+.container-j .content-box.show-specifications button:hover {
+  background-color: #000000; /* Change button color on hover when specifications are shown */
+}
+
+.container-j .content-box.show-specifications button:active {
+  background-color: #7a9900; /* Change button color on click when specifications are shown */
+}
+
+.container-j .content-box .specifications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.container-j .content-box .specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-j .content-box .specifications li {
+  margin-bottom: 10px;
+}
+
+/* ==================================================================================================== */
+/* K */
+.container-k {
+  border-top: 3rem solid black;
+  background-image: url('../src/assets/AE86.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container-k .content-box {
+  background: rgba(255, 255, 255, 0.576);
+  padding: 1rem 5rem;
+  height: 10rem;
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-k .content-box h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-k .content-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Show the specifications when .show-specifications is applied to .content-box */
+.container-k .content-box .specifications {
+  display: none;
+  margin-top: 20px;
+}
+
+.container-k .content-box.show-specifications .specifications {
+  display: block; 
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.576);
+  margin-top: 5rem;
+  /* /* max-width: 80rem;  */
+  width: 800px;
+  text-align: center;
+  padding: 1rem 5rem;
+
+  /* Show the specifications when .show-specifications class is applied */
+}
+
+.container-k .content-box.show-specifications button {
+  margin-left: 22.5rem;
+  background-color: rgb(255, 0, 0); /* Change button color when specifications are shown */
+}
+
+.container-k .content-box.show-specifications button:hover {
+  background-color: #000000; /* Change button color on hover when specifications are shown */
+}
+
+.container-k .content-box.show-specifications button:active {
+  background-color: #7a9900; /* Change button color on click when specifications are shown */
+}
+
+.container-k .content-box .specifications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.container-k .content-box .specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-k .content-box .specifications li {
+  margin-bottom: 10px;
+}
+
+/* ====================================================================================================== */
+/* L */
+.container-l {
+  border-top: 3rem solid black;
+  background-image: url('../src/assets/911_Carrera.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container-l .content-box {
+  background: rgba(255, 255, 255, 0.576);
+  padding: 1rem 5rem;
+  height: 10rem;
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-l .content-box h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-l .content-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Show the specifications when .show-specifications is applied to .content-box */
+.container-l .content-box .specifications {
+  display: none;
+  margin-top: 20px;
+}
+
+.container-l .content-box.show-specifications .specifications {
+  display: block; 
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.576);
+  margin-top: 5rem;
+  /* /* max-width: 80rem;  */
+  width: 800px;
+  text-align: center;
+  padding: 1rem 5rem;
+
+  /* Show the specifications when .show-specifications class is applied */
+}
+
+.container-l .content-box.show-specifications button {
+  margin-left: 22.5rem;
+  background-color: rgb(255, 0, 0); /* Change button color when specifications are shown */
+}
+
+.container-l .content-box.show-specifications button:hover {
+  background-color: #000000; /* Change button color on hover when specifications are shown */
+}
+
+.container-l .content-box.show-specifications button:active {
+  background-color: #7a9900; /* Change button color on click when specifications are shown */
+}
+
+.container-l .content-box .specifications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.container-l .content-box .specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-l .content-box .specifications li {
+  margin-bottom: 10px;
+}
+
+/* ============================================================================================================ */
+/* M */
+.container-m {
+  border-top: 3rem solid black;
+  background-image: url('../src/assets/DB11.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container-m .content-box {
+  background: rgba(255, 255, 255, 0.576);
+  padding: 1rem 5rem;
+  height: 10rem;
+  max-width: 80rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-m .content-box h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-m .content-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Show the specifications when .show-specifications is applied to .content-box */
+.container-m .content-box .specifications {
+  display: none;
+  margin-top: 20px;
+}
+
+.container-m .content-box.show-specifications .specifications {
+  display: block; 
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.576);
+  margin-top: 5rem;
+  /* /* max-width: 80rem;  */
+  width: 800px;
+  text-align: center;
+  padding: 1rem 5rem;
+
+  /* Show the specifications when .show-specifications class is applied */
+}
+
+.container-m .content-box.show-specifications button {
+  margin-left: 22.5rem;
+  background-color: rgb(255, 0, 0); /* Change button color when specifications are shown */
+}
+
+.container-m .content-box.show-specifications button:hover {
+  background-color: #000000; /* Change button color on hover when specifications are shown */
+}
+
+.container-m .content-box.show-specifications button:active {
+  background-color: #7a9900; /* Change button color on click when specifications are shown */
+}
+
+.container-m .content-box .specifications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.container-m .content-box .specifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-m .content-box .specifications li {
+  margin-bottom: 10px;
+}
+
+
+/* ======================================== */
+/* FOOTER */
+.container-footer {
+  height: 18rem;
+  background: rgb(15, 14, 14);
+  text-align: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.container-footer h1 {
+  font-family: 'Dancing Script', cursive;
+  color:#00f7ff;
+  font-size: 3rem;
+}
+.container-footer p {
+  padding-top: 1rem; 
+  font-size: 1.5rem;
+  color: white;  
+}
+.container-footer h2 {
+  padding-top: 1.5rem;
+  color: orange;
+}
+.container-footer h3 {
+  padding-top: 1rem;
+  color: white;
+}
+.container-footer h3 span {
+  
+  color: #00f7ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 888px) {
+  #menu-btn{
+    display: inline-block;
+   }
+
+   .header .navbar {
+       /* height: 40rem; */
+       position: absolute;
+       top: 100%;
+       right: -100%;
+       background: #202020;
+       opacity: 70%;
+       width: 30rem;
+       height: calc(100vh - 19rem);
+       padding-top: 2rem;
+   }
+   .header .navbar a:hover {
+    color: #00f7ff;
+    border-bottom: 0.3rem solid #00f7ff;
+    padding-bottom: 0.5rem;
+  }
+
+   .header .navbar.active {
+       right: 0;
+   }
+
+   .header .navbar a{
+       color: #ffffff;
+       display: block;
+       margin: 1.5rem;
+   }
+
+
+   /* ============================ */
+   .container-a {
+    background-image:  url('../src/assets/crop/Mustang\ GT_1.jpg');
+   }
+
+   .container-c {
+    background-image:  url('../src/assets/crop/ferrari-458_1.jpg'); /* Replace with the path to your image */
+
+   }
+   .container-d {
+    background-image:  url('../src/assets/crop/Murcielago_1.jpg'); /* Replace with the path to your image */
+
+   }
+   .container-e {
+    background-image:  url('../src/assets/crop/porsche_CGT_1.jpg'); /* Replace with the path to your image */
+
+   }
+   .container-f {
+    background-image:  url('../src/assets/crop/R34_GTR_1.jpg'); /* Replace with the path to your image */
+
+   }
+   .container-g {
+    background-image:  url('../src/assets/crop/f40_1.jpg'); /* Replace with the path to your image */
+
+   }
+   .container-h {
+    background-image:  url('../src/assets/crop/R8\(1\)_1.jpg'); /* Replace with the path to your image */
+
+   }
+   .container-i {
+    background-image:  url('../src/assets/crop/Supra_1.jpg'); /* Replace with the path to your image */
+
+   }
+   .container-j {
+    background-image:  url('../src/assets/crop/R35_GTR_1.jpg'); /* Replace with the path to your image */
+
+   }
+   .container-k {
+    background-image:  url('../src/assets/crop/AE86_1.jpg'); /* Replace with the path to your image */
+
+   }
+   .container-l {
+    background-image:  url('../src/assets/crop/911_Carrera_1.jpg'); /* Replace with the path to your image */
+
+   }
+   .container-m {
+    background-image:  url('../src/assets/crop/DB11_1.jpg'); /* Replace with the path to your image */
+
+   }
+}
+
+
