@@ -171,7 +171,7 @@ body {
 
 .container-a .content-box {
   background: rgba(255, 255, 255, 0.576);
-  padding: 1rem 5rem;
+  /* padding: 1rem 5rem; */
   height: 10rem;
   max-width: 80rem;
   width: 100%;
@@ -261,7 +261,7 @@ body {
 
 .container-c .content-box {
   background: rgba(255, 255, 255, 0.576);
-  padding: 1rem 5rem;
+  /* padding: 1rem 5rem; */
   height: 10rem;
   max-width: 80rem;
   width: 100%;
@@ -353,7 +353,7 @@ body {
 
 .container-d .content-box {
   background: rgba(255, 255, 255, 0.576);
-  padding: 1rem 5rem;
+  /* padding: 1rem 5rem; */
   height: 10rem;
   max-width: 80rem;
   width: 100%;
@@ -441,7 +441,7 @@ body {
 
 .container-e .content-box {
   background: rgba(255, 255, 255, 0.576);
-  padding: 1rem 5rem;
+  /* padding: 1rem 5rem; */
   height: 10rem;
   max-width: 80rem;
   width: 100%;
@@ -528,7 +528,7 @@ body {
 
 .container-f .content-box {
   background: rgba(255, 255, 255, 0.576);
-  padding: 1rem 5rem;
+  /* padding: 1rem 5rem; */
   height: 10rem;
   max-width: 80rem;
   width: 100%;
@@ -615,7 +615,7 @@ body {
 
 .container-g .content-box {
   background: rgba(255, 255, 255, 0.576);
-  padding: 1rem 5rem;
+  /* padding: 1rem 5rem; */
   height: 10rem;
   max-width: 80rem;
   width: 100%;
@@ -702,7 +702,7 @@ body {
 
 .container-h .content-box {
   background: rgba(255, 255, 255, 0.576);
-  padding: 1rem 5rem;
+  /* padding: 1rem 5rem; */
   height: 10rem;
   max-width: 80rem;
   width: 100%;
@@ -789,7 +789,7 @@ body {
 
 .container-i .content-box {
   background: rgba(255, 255, 255, 0.576);
-  padding: 1rem 5rem;
+  /* padding: 1rem 5rem; */
   height: 10rem;
   max-width: 80rem;
   width: 100%;
@@ -876,7 +876,7 @@ body {
 
 .container-j .content-box {
   background: rgba(255, 255, 255, 0.576);
-  padding: 1rem 5rem;
+  /* padding: 1rem 5rem; */
   height: 10rem;
   max-width: 80rem;
   width: 100%;
@@ -962,7 +962,7 @@ body {
 
 .container-k .content-box {
   background: rgba(255, 255, 255, 0.576);
-  padding: 1rem 5rem;
+  /* padding: 1rem 5rem; */
   height: 10rem;
   max-width: 80rem;
   width: 100%;
@@ -1048,7 +1048,7 @@ body {
 
 .container-l .content-box {
   background: rgba(255, 255, 255, 0.576);
-  padding: 1rem 5rem;
+  /* padding: 1rem 5rem; */
   height: 10rem;
   max-width: 80rem;
   width: 100%;
@@ -1134,7 +1134,7 @@ body {
 
 .container-m .content-box {
   background: rgba(255, 255, 255, 0.576);
-  padding: 1rem 5rem;
+  /* padding: 1rem 5rem; */
   height: 10rem;
   max-width: 80rem;
   width: 100%;
@@ -1253,7 +1253,7 @@ body {
 
 
 /* RESPONSIVE */
-@media (max-width: 888px) {
+ @media only screen and (max-width: 768px){
   #menu-btn{
     display: inline-block;
    }
@@ -1265,10 +1265,19 @@ body {
        right: -100%;
        background: #202020;
        opacity: 70%;
-       width: 30rem;
-       height: calc(100vh - 19rem);
+       width: 20rem;
+       height: calc(100vh - 7.5rem);
        padding-top: 2rem;
    }
+   .container-footer {
+    height: 20rem;
+    background: rgb(15, 14, 14);
+    text-align: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+
    .header .navbar a:hover {
     color: #00f7ff;
     border-bottom: 0.3rem solid #00f7ff;
@@ -1282,8 +1291,17 @@ body {
    .header .navbar a{
        color: #ffffff;
        display: block;
-       margin: 1.5rem;
+       margin: 1rem;
    }
+   /* ============================= */
+   .home .content p {
+    text-align: center;
+    font-size: 1.2rem; 
+}
+.home .content {
+  padding: 0;
+  padding-top: 10rem;
+}
 
 
    /* ============================ */
@@ -1337,4 +1355,14 @@ body {
    }
 }
 
-
+@media only screen and (max-width: 325px) {
+  .home .content {
+    display: flex;
+    /* padding: 10rem; */
+    padding-top: 25rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+}
